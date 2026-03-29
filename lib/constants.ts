@@ -43,27 +43,27 @@ export const HERO_CHIPS = [
 
 export const FEATURES = [
   {
-    icon: "🌍",
+    icon: "globe" as const,
     title: "Worldwide Coverage",
     description:
       "Available in over 600 cities across 60 countries. From New York to Dubai, Tokyo to London — our network ensures premium transportation anywhere on the planet.",
     link: "600+ cities",
   },
   {
-    icon: "🤝",
+    icon: "chauffeur" as const,
     title: "Partners & Affiliates",
     description:
       "Every partner in our network is rigorously licensed, vetted, and fully insured. We work exclusively with professional operators running their own modern, well-maintained fleets.",
     link: "Verified operators",
   },
   {
-    icon: "💰",
+    icon: "dollar" as const,
     title: "All-Inclusive Pricing",
     description:
       "No hidden fees or surprise charges at drop-off. Every quote includes gratuity, tolls, and fees — fully confirmed before you book. What you see is exactly what you pay.",
     link: "Transparent rates",
   },
-] as const;
+];
 
 export const FLEET_VEHICLES = [
   {

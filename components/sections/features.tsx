@@ -1,7 +1,14 @@
 "use client";
 
 import { FEATURES } from "@/lib/constants";
+import { GlobeIcon, ChauffeurIcon, DollarIcon } from "@/components/icons/contact-icons";
 import { ScrollReveal } from "./scroll-reveal";
+
+const ICON_MAP = {
+  globe: GlobeIcon,
+  chauffeur: ChauffeurIcon,
+  dollar: DollarIcon,
+} as const;
 
 export function Features() {
   return (
@@ -25,24 +32,27 @@ export function Features() {
       </ScrollReveal>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[26px] mt-14">
-        {FEATURES.map((feat, i) => (
-          <ScrollReveal key={feat.title} delay={i * 0.1}>
-            <div className="bg-ivory border border-ivory-3 rounded-xl p-[38px_30px] relative overflow-hidden transition-all duration-[350ms] hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(13,21,38,0.14)] hover:border-gold/20 group before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-gold before:to-gold-2 before:scale-x-0 before:origin-left before:transition-transform before:duration-[350ms] hover:before:scale-x-100">
-              <div className="w-[62px] h-[62px] rounded-xl bg-navy flex items-center justify-center text-2xl mb-[22px]">
-                {feat.icon}
+        {FEATURES.map((feat, i) => {
+          const Icon = ICON_MAP[feat.icon];
+          return (
+            <ScrollReveal key={feat.title} delay={i * 0.1}>
+              <div className="h-full bg-ivory border border-ivory-3 rounded-xl p-[38px_30px] relative overflow-hidden transition-all duration-[350ms] hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(13,21,38,0.14)] hover:border-gold/20 group before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-gold before:to-gold-2 before:scale-x-0 before:origin-left before:transition-transform before:duration-[350ms] hover:before:scale-x-100">
+                <div className="w-[62px] h-[62px] rounded-xl bg-ivory-3 flex items-center justify-center mb-[22px]">
+                  <Icon className="w-7 h-7 text-gold" />
+                </div>
+                <h3 className="font-heading text-[1.3rem] font-medium text-navy mb-2.5">
+                  {feat.title}
+                </h3>
+                <p className="text-[0.88rem] text-body-2 leading-7">
+                  {feat.description}
+                </p>
+                <div className="inline-flex items-center gap-1.5 text-[0.77rem] font-bold text-gold tracking-widest uppercase mt-[18px]">
+                  {feat.link} <span>&#8594;</span>
+                </div>
               </div>
-              <h3 className="font-heading text-[1.3rem] font-medium text-navy mb-2.5">
-                {feat.title}
-              </h3>
-              <p className="text-[0.88rem] text-body-2 leading-7">
-                {feat.description}
-              </p>
-              <div className="inline-flex items-center gap-1.5 text-[0.77rem] font-bold text-gold tracking-widest uppercase mt-[18px]">
-                {feat.link} <span>&#8594;</span>
-              </div>
-            </div>
-          </ScrollReveal>
-        ))}
+            </ScrollReveal>
+          );
+        })}
       </div>
     </section>
   );

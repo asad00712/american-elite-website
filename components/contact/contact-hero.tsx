@@ -7,7 +7,7 @@ export function ContactHero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=1800&q=80')",
+            "url('https://images.unsplash.com/photo-1563720223185-11003d516935?w=1800&q=80')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/92 to-navy/85" />

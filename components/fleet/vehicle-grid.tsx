@@ -2,22 +2,19 @@ import { FLEET_VEHICLES } from "@/lib/constants";
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
 import { VehicleCard } from "./vehicle-card";
 
-const EXTENDED_VEHICLES = [
-  ...FLEET_VEHICLES.map((v) => ({
-    name: v.name,
-    description: v.description,
-    image: v.image,
-    capacity: v.capacity,
-    features:
-      v.name === "Executive Sedan"
-        ? ["WiFi", "Water Bottle", "Climate Control", "Leather Seats", "USB Charging", "Flight Tracking"]
-        : v.name === "Luxury SUV"
-          ? ["Leather Seats", "USB Ports", "Extra Luggage", "Climate Control", "WiFi", "Privacy Partition"]
-          : v.name === "Sprinter Van"
-            ? ["Captain Seats", "WiFi", "AV System", "USB Ports", "Climate Control", "Tinted Windows"]
-            : ["Restroom", "WiFi", "PA System", "Reclining Seats", "Overhead Storage", "Climate Control"],
-  }))
-];
+const FEATURE_MAP: Record<string, string[]> = {
+  "Lincoln Town Car": ["Leather Seats", "Climate Control", "Tinted Windows", "CD Player", "AM/FM Surround Sound", "Non-Smoking"],
+  "Luxury SUV": ["Comfortable Seating", "Flat Screen TV's", "DVD Player", "CD Player with AM/FM Surround Sound", "Fiber Optic & Strobe Lighting", "Mirrored Fiber Optic Ceiling", "Bar with Built-in Ice Chests", "Static & Laser Light"],
+  "14 Passenger Van": ["Passenger Capacity: 14", "Luggage Capacity: 4", "Colors Available: Black", "Tinted Rear Windows", "Climate Control", "Professional Driver"],
+};
+
+const EXTENDED_VEHICLES = FLEET_VEHICLES.map((v) => ({
+  name: v.name,
+  description: v.description,
+  image: v.image,
+  capacity: v.capacity,
+  features: FEATURE_MAP[v.name] ?? v.tags as unknown as string[],
+}));
 
 export function VehicleGrid() {
   return (

@@ -66,7 +66,7 @@ export function FeaturedCities() {
         <h2 className="font-heading text-[clamp(2rem,3.5vw,3rem)] font-normal text-navy leading-[1.2] -tracking-wide mt-3.5">
           Featured <em className="italic text-gold">Destinations</em>
         </h2>
-        <div className="w-[90px] h-0.5 mx-auto my-[18px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+
         <p className="text-base text-body-2 leading-7 max-w-[580px] mx-auto">
           Premium chauffeured service in the world&apos;s most iconic cities,
           with local expertise and consistent luxury standards.

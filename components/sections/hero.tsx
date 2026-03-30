@@ -51,16 +51,14 @@ export function Hero() {
       <div className="relative z-10">
         <div className="inline-flex items-center gap-2.5 text-[0.73rem] font-bold tracking-[3px] uppercase text-gold-3 mb-5">
           <span className="block w-7 h-px bg-gold-3/50" />
-          Premium Chauffeured Travel
+          Premium Limousine &amp; Taxi Service
           <span className="block w-7 h-px bg-gold-3/50" />
         </div>
 
         <h1 className="font-heading text-[clamp(2.6rem,5vw,4.8rem)] font-normal leading-[1.1] text-white mb-[18px] -tracking-wide">
-          Any Place.
+          Your Ride,
           <br />
-          <em className="italic text-gold-3">Any Time.</em>
-          <br />
-          Anywhere.
+          <em className="italic text-gold-3">Our Pride.</em>
         </h1>
 
         <p className="text-[1.05rem] text-white/55 mb-9 tracking-wide">

@@ -25,9 +25,9 @@ export function FleetHero() {
             Our <em className="italic text-gold-3">Fleet</em>
           </h1>
           <p className="text-[1.05rem] text-white/55 mt-4 max-w-[600px] mx-auto leading-7">
-            Explore a variety of vehicles we offer at Limousine.com, from luxury
-            sedans and SUVs to Sprinter Vans, Charter Buses, and Stretch
-            Limousines — tailored for your needs.
+            Explore a variety of vehicles we offer at American Elite Limousine,
+            from Lincoln Town Cars and SUVs to 14 Passenger Vans — specially
+            tailored for your needs.
           </p>
           <Link
             href="/contact"

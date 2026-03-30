@@ -71,7 +71,7 @@ export function CitiesByRegion() {
         <h2 className="font-heading text-[clamp(2rem,3.5vw,3rem)] font-normal text-white leading-[1.2] -tracking-wide mt-3.5">
           Available <em className="italic text-gold-3">Worldwide</em>
         </h2>
-        <div className="w-[90px] h-0.5 mx-auto my-[18px] bg-gradient-to-r from-transparent via-gold-3 to-transparent" />
+
       </ScrollReveal>
 
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">

@@ -14,22 +14,20 @@ const SERVICES = [
   "Business Accounts",
   "Party Limos",
   "Wedding Transportation",
-  "Concert / Event Transport",
+  "Concerts",
+  "Prom",
+  "Sporting Events",
+  "Bar Hopping",
+  "Conventions",
+  "Anniversary",
+  "Bachelorette Party",
+  "Corporate Events",
 ] as const;
 
-const SERVICE_AREAS = [
-  { flag: "🇺🇸", city: "New York" },
-  { flag: "🇺🇸", city: "Los Angeles" },
-  { flag: "🇺🇸", city: "Chicago" },
-  { flag: "🇺🇸", city: "Miami" },
-  { flag: "🇺🇸", city: "Las Vegas" },
-  { flag: "🇬🇧", city: "London" },
-  { flag: "🇦🇪", city: "Dubai" },
-  { flag: "🇯🇵", city: "Tokyo" },
-  { flag: "🇸🇬", city: "Singapore" },
-  { flag: "🇨🇦", city: "Toronto" },
-  { flag: "🇦🇺", city: "Sydney" },
-  { flag: "🇫🇷", city: "Paris" },
+const NJ_SERVICE_AREAS = [
+  "Parsippany", "Basking Ridge", "Madison", "Livingston",
+  "Montville", "Bernardsville", "Florham Park", "East Hanover",
+  "Rockaway", "Morristown", "Short Hills", "Summit",
 ] as const;
 
 function ContactCard({
@@ -63,11 +61,24 @@ export function ContactInfo() {
         <h2 className="font-heading text-[clamp(1.6rem,3vw,2.2rem)] font-normal text-navy leading-[1.2] -tracking-wide mb-5">
           We&apos;re Here to <em className="italic text-gold">Help</em>
         </h2>
+        <p className="text-[0.92rem] text-body-2 leading-7 mb-4">
+          When you decide to rent a car in Parsippany you will discover it has
+          never been easier with American Elite Limousine. We provide 24/7
+          service with affordable and reasonable rates with reliable chauffeurs.
+        </p>
+        <p className="text-[0.92rem] text-body-2 leading-7 mb-4">
+          Our mission is to provide the most professional, courteous, effective
+          and reliable service to our customers every time they visit us and
+          request our transportation car services.
+        </p>
         <p className="text-[0.92rem] text-body-2 leading-7 mb-8">
-          Limousine.com provides premium chauffeured ground transportation 24
-          hours a day, 7 days a week. Whether you need an airport transfer,
-          corporate travel, or a special event vehicle, our team is ready to
-          assist you with booking, quotes, and any questions.
+          We offer clean non-smoking transportation Minivans, Lincoln Town Cars,
+          and Luxury SUVs. Place a reservation online today or call us at{" "}
+          <a href={`tel:${SITE.phoneRaw}`} className="text-gold font-semibold no-underline hover:underline">
+            {SITE.phone}
+          </a>{" "}
+          and our customer service representatives in Parsippany will be glad to
+          help you with your questions, quotes or schedule availability.
         </p>
 
         {/* Contact Cards */}
@@ -77,7 +88,7 @@ export function ContactInfo() {
             label="Phone"
           >
             <a
-              href="tel:8889995466"
+              href={`tel:${SITE.phoneRaw}`}
               className="text-[0.95rem] font-semibold text-navy no-underline hover:text-gold transition-colors"
             >
               {SITE.phone}
@@ -96,12 +107,6 @@ export function ContactInfo() {
               className="text-[0.95rem] font-semibold text-navy no-underline hover:text-gold transition-colors block"
             >
               {SITE.email}
-            </a>
-            <a
-              href={`mailto:${SITE.emailAlt}`}
-              className="text-[0.85rem] text-body-2 no-underline hover:text-gold transition-colors block mt-0.5"
-            >
-              {SITE.emailAlt}
             </a>
           </ContactCard>
 
@@ -131,9 +136,9 @@ export function ContactInfo() {
         {/* Services */}
         <div className="mb-10">
           <h3 className="font-heading text-[1.2rem] font-medium text-navy mb-4">
-            Our Services
+            We Proudly Provide Limo Services For
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
             {SERVICES.map((service) => (
               <div
                 key={service}
@@ -162,16 +167,16 @@ export function ContactInfo() {
             Service Areas
           </h3>
           <div className="flex flex-wrap gap-2">
-            {SERVICE_AREAS.map((area) => (
+            {NJ_SERVICE_AREAS.map((area) => (
               <span
-                key={area.city}
+                key={area}
                 className="inline-flex items-center gap-1.5 text-[0.82rem] text-body-2 bg-white border border-ivory-3 rounded-full px-3.5 py-1.5 hover:border-gold/30 hover:bg-gold/[0.04] transition-colors"
               >
-                {area.flag} {area.city}
+                {area}, NJ
               </span>
             ))}
             <span className="inline-flex items-center text-[0.82rem] text-gold font-semibold px-3.5 py-1.5">
-              +600 more cities
+              + more areas
             </span>
           </div>
         </div>

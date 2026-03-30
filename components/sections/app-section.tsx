@@ -1,6 +1,12 @@
 "use client";
 
-import { APP_FEATURES } from "@/lib/constants";
+const APP_FEATURES = [
+  "Instant booking with real-time confirmation",
+  "Live GPS driver tracking from pickup to drop-off",
+  "Modify or cancel reservations anytime, anywhere",
+  "Digital receipts and corporate expense reports",
+  "24/7 in-app support and dispatch chat",
+] as const;
 import { ScrollReveal } from "./scroll-reveal";
 
 export function AppSection() {

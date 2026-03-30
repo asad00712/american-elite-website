@@ -14,9 +14,9 @@ export function Footer() {
               <Image src={Logo} alt="logo" className="h-16 w-24" />
             </a>
             <p className="text-[0.86rem] text-white/[0.42] leading-7 mt-3.5 max-w-[350px]">
-              The world&apos;s premier ground transportation marketplace.
-              Connecting travelers with the finest chauffeured services across
-              600+ cities worldwide.
+              New Jersey&apos;s premier limousine and taxi service. Professional,
+              reliable, and affordable transportation available 24 hours a day,
+              7 days a week for all your local and long distance travel needs.
             </p>
             <div className="flex gap-2.5 mt-5">
               {["f", "in", "\uD835\uDD4F", "\u25B6"].map((icon) => (
@@ -77,22 +77,17 @@ export function Footer() {
             <ul className="list-none flex flex-col gap-[9px]">
               <li>
                 <span className="text-[0.86rem] text-white/[0.42]">
-                  36-01 37th Avenue
+                  {SITE.address}
                 </span>
               </li>
               <li>
                 <span className="text-[0.86rem] text-white/[0.42]">
-                  Long Island City
-                </span>
-              </li>
-              <li>
-                <span className="text-[0.86rem] text-white/[0.42]">
-                  New York, NY 11101
+                  {SITE.city}
                 </span>
               </li>
               <li>
                 <a
-                  href="tel:8889995466"
+                  href={`tel:${SITE.phoneRaw}`}
                   className="text-[0.86rem] text-white/[0.42] no-underline hover:text-gold-3 transition-colors"
                 >
                   {SITE.phone}
@@ -107,12 +102,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href={`mailto:${SITE.emailAlt}`}
-                  className="text-[0.86rem] text-white/[0.42] no-underline hover:text-gold-3 transition-colors"
-                >
-                  {SITE.emailAlt}
-                </a>
+                <span className="text-[0.86rem] text-white/[0.42]">
+                  Available 24/7
+                </span>
               </li>
             </ul>
           </div>
@@ -122,13 +114,12 @@ export function Footer() {
         <div className="border-t border-white/[0.07] py-[22px] flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-[0.79rem] text-white/[0.28]">
             &copy; {new Date().getFullYear()}{" "}
-            <span className="text-gold-2">Limousine.com</span>. All rights
+            <span className="text-gold-2">American Elite Limousine</span>. All rights
             reserved.
           </p>
           <p className="text-[0.79rem] text-white/[0.28]">
-            Business Hours:{" "}
-            <span className="text-gold-2">9AM–5PM EST</span> · Dispatch:{" "}
-            <span className="text-gold-2">24/7</span>
+            Serving <span className="text-gold-2">New Jersey</span> &amp; the{" "}
+            <span className="text-gold-2">TriState Area</span> · 24/7
           </p>
         </div>
       </div>

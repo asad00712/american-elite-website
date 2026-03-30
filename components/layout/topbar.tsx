@@ -7,7 +7,7 @@ export function Topbar() {
         <span>📞</span>
         <strong className="text-gold-3">{SITE.phone}</strong>
         <span className="hidden sm:inline">
-          &nbsp;&nbsp;|&nbsp;&nbsp;Dispatch &amp; Operator assisted reservations
+          &nbsp;&nbsp;|&nbsp;&nbsp;24/7 Limousine &amp; Taxi Service · NJ &amp; TriState
         </span>
       </div>
       <div className="hidden sm:flex gap-6">

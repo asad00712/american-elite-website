@@ -19,15 +19,15 @@ export function Features() {
           Why Choose Us
         </div>
         <h2 className="font-heading text-[clamp(2rem,3.5vw,3rem)] font-normal text-navy leading-[1.2] -tracking-wide mt-3.5">
-          The Gold Standard in
+          Why Choose
           <br />
-          <em className="italic text-gold">Chauffeured Travel</em>
+          <em className="italic text-gold">American Elite?</em>
         </h2>
-        <div className="w-[90px] h-0.5 mx-auto my-[18px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+
         <p className="text-base text-body-2 leading-7 max-w-[580px] mx-auto">
-          We connect travelers with the world&apos;s finest licensed
-          transportation operators — vetted, insured, and committed to
-          excellence on every single journey.
+          Booking a limo has never been easier. We are a New Jersey based
+          company available 24/7. We take pride in our professional, reliable,
+          and efficient service at reasonable rates.
         </p>
       </ScrollReveal>
 

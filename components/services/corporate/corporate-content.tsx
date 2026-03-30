@@ -6,24 +6,6 @@ import BlackCar from '@/public/BlackCar.png'
 
 type IconProps = SVGProps<SVGSVGElement>;
 
-function CheckCircleIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.8}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="m9 12 2 2 4-4" />
-    </svg>
-  );
-}
-
 function ClockIcon(props: IconProps) {
   return (
     <svg
@@ -59,15 +41,6 @@ function MoonIcon(props: IconProps) {
   );
 }
 
-const BENEFITS = [
-  "Dedicated Account Manager",
-  "Centralized Billing & Invoicing",
-  "Priority Scheduling",
-  "Professional & Discreet Chauffeurs",
-  "Real-Time Trip Updates",
-  "Flexible Cancellation Policy",
-];
-
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="border-l-[4px] border-gold pl-4 mb-6">
@@ -93,47 +66,31 @@ export function CorporateContent() {
           />
         </div>
         <h2 className="font-heading text-[1.7rem] md:text-[2rem] font-medium text-navy mb-4">
-          Corporate &amp; Local Services
+          Corporate &ndash; Local Services
         </h2>
         <p className="text-[0.95rem] text-body-2 leading-7 mb-4">
-          Being on time is crucial in business — that&apos;s why at
-          Limousine.com, punctuality is our first priority. Arrive at your
-          business meeting with our clean and well-maintained fleets of
-          Limousines, Luxury Sedans, SUVs, and Luxury Minivans.
+          Being on time is really important nowadays that&apos;s why at American
+          Elite Limousine this is our first priority. Arrive to your business
+          meeting with our clean and well-maintained fleets of Limousines, Luxury
+          Sedans, SUV and Luxury Minivans.
         </p>
         <p className="text-[0.95rem] text-body-2 leading-7 mb-4">
-          We deliver quality, personalized, and unique corporate service
-          worldwide. We handle everything in the most professional manner so you
-          can travel with the comfort and luxury you deserve.
+          We deliver quality, personalized and unique corporate service in the
+          Parsippany Area. We handle everything in the most professional manner
+          so you can travel with the comfort and luxury you deserve.
         </p>
         <p className="text-[0.95rem] text-body-2 leading-7">
-          Our corporate limousine and luxury sedan services are available in 600+
-          cities worldwide. You can trust our professional chauffeurs with the
-          most demanding arrangements. We are available 24/7.
+          Since our Corporate Limousine and Luxury sedan services are available
+          in the New Jersey Area you can trust our professional chauffeurs with
+          the most demanding arrangements. We are available 24/7.
         </p>
-      </ScrollReveal>
-
-      {/* Benefits Section */}
-      <ScrollReveal>
-        <SectionHeading>Why Choose Our Corporate Service</SectionHeading>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3.5">
-          {BENEFITS.map((benefit) => (
-            <div
-              key={benefit}
-              className="flex items-center gap-3 text-[0.92rem] text-body-2"
-            >
-              <CheckCircleIcon className="w-5 h-5 text-gold shrink-0" />
-              {benefit}
-            </div>
-          ))}
-        </div>
       </ScrollReveal>
 
       {/* Our Rates Section */}
       <ScrollReveal>
         <SectionHeading>Our Rates</SectionHeading>
         <p className="text-[0.95rem] text-body-2 leading-7 mb-6">
-          Our corporate rates are transparent and all-inclusive.
+          Price will vary according to the time you require our service.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -175,15 +132,16 @@ export function CorporateContent() {
         </div>
 
         <p className="text-[0.95rem] text-body-2 leading-7">
-          Discounted rates available for corporate accounts based on service
-          frequency. Call us at{" "}
+          Discounted Rates applies for Corporate Limousine based on the service
+          frequency. Call us today at{" "}
           <a
-            href="tel:8889995466"
+            href={`tel:${SITE.phoneRaw}`}
             className="text-gold font-semibold no-underline hover:underline"
           >
             {SITE.phone}
           </a>{" "}
-          to set up your corporate account.
+          and Make your Reservation to start enjoying the unique and world class
+          service of American Elite Limousine and Taxi Services.
         </p>
       </ScrollReveal>
     </div>

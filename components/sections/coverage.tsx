@@ -2,7 +2,32 @@
 
 import { COVERAGE_STATS, COVERAGE_FEATURES } from "@/lib/constants";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
+import { PlaneIcon, HeadphonesIcon } from "@/components/icons/contact-icons";
 import { ScrollReveal } from "./scroll-reveal";
+
+const ICON_MAP: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
+  plane: PlaneIcon,
+  building: (props) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
+      <path d="M9 22v-4h6v4" /><path d="M8 6h.01" /><path d="M16 6h.01" /><path d="M12 6h.01" />
+      <path d="M12 10h.01" /><path d="M12 14h.01" /><path d="M16 10h.01" /><path d="M16 14h.01" />
+      <path d="M8 10h.01" /><path d="M8 14h.01" />
+    </svg>
+  ),
+  party: (props) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M5.8 11.3 2 22l10.7-3.79" /><path d="M4 3h.01" /><path d="M22 8h.01" /><path d="M15 2h.01" />
+      <path d="M22 20h.01" /><path d="M22 2 12 12" /><path d="M16 8l-4.8 4.8" /><path d="M9 11.2 5.8 11.3" />
+    </svg>
+  ),
+  car: (props) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.4A1 1 0 0 0 14.5 6h-5a1 1 0 0 0-.8.4L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2" />
+      <circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" />
+    </svg>
+  ),
+};
 
 export function Coverage() {
   return (
@@ -18,18 +43,18 @@ export function Coverage() {
         <div>
           <div className="inline-flex items-center gap-2.5 text-[0.71rem] font-bold tracking-[3px] uppercase text-gold-3">
             <span className="w-7 h-0.5 bg-gold-3 shrink-0" />
-            Global Reach
+            Our Services
           </div>
           <h2 className="font-heading text-[clamp(2rem,3.5vw,3rem)] font-normal text-white leading-[1.2] -tracking-wide mt-3.5">
             Your Journey,
             <br />
-            <em className="italic text-gold">Our Network</em>
+            <em className="italic text-gold">Our Priority</em>
           </h2>
-          <div className="w-12 h-0.5 bg-gradient-to-r from-gold to-transparent my-[18px]" />
+
           <p className="text-base text-white/50 leading-7 max-w-[580px]">
-            Whether you&apos;re arriving from or leaving on a trip,
-            Limousine.com is there — with Sedans, SUVs, Vans, or Buses. We have
-            you covered anywhere in the world.
+            Whether you need an airport pickup, corporate transportation,
+            or a ride for a special event — American Elite Limousine has you
+            covered across New Jersey and the TriState area.
           </p>
 
           <div className="grid grid-cols-2 gap-[18px] mt-10">
@@ -58,8 +83,11 @@ export function Coverage() {
                 key={feat.title}
                 className="flex gap-3.5 items-start bg-white/[0.03] border border-white/[0.06] rounded-[10px] p-[18px] hover:border-gold/25 transition-colors"
               >
-                <div className="w-[42px] h-[42px] rounded-lg shrink-0 bg-gold/[0.14] flex items-center justify-center text-[1.1rem]">
-                  {feat.icon}
+                <div className="w-[42px] h-[42px] rounded-lg shrink-0 bg-gold/[0.14] flex items-center justify-center">
+                  {(() => {
+                    const Icon = ICON_MAP[feat.icon];
+                    return Icon ? <Icon className="w-5 h-5 text-gold" /> : null;
+                  })()}
                 </div>
                 <div>
                   <div className="font-semibold text-white text-[0.92rem] mb-[3px]">

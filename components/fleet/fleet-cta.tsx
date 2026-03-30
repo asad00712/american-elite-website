@@ -39,7 +39,7 @@ export function FleetCta() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:8889995466"
+              href={`tel:${SITE.phoneRaw}`}
               className="inline-flex items-center gap-2.5 bg-white/[0.08] border border-white/[0.12] text-white px-7 py-3.5 rounded-[5px] text-[0.9rem] font-semibold no-underline hover:bg-white/[0.14] hover:border-gold/30 transition-all"
             >
               <PhoneIcon />

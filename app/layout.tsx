@@ -18,16 +18,16 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Limousine.com — Luxury Ground Travel. Any Place. Any Time. Anywhere.",
+  title: "American Elite Limousine & Taxi — Professional Limo Service in New Jersey",
   description:
-    "The world's premier luxury ground transportation marketplace. Chauffeured sedans, SUVs, vans, and buses across 600+ cities in 60+ countries. All-inclusive pricing, vetted drivers, 24/7 dispatch.",
+    "New Jersey's premier limousine and taxi service. Airport transportation to EWR, JFK, LaGuardia. Corporate travel, party limos, and long distance. Available 24/7. Call (973) 917-4949.",
   keywords: [
-    "limousine service",
-    "chauffeured travel",
-    "airport transfer",
-    "corporate travel",
-    "luxury car service",
-    "limousine.com",
+    "limousine service NJ",
+    "taxi service New Jersey",
+    "airport transportation NJ",
+    "corporate limo NJ",
+    "Parsippany limo",
+    "American Elite Limousine",
   ],
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${playfair.variable} antialiased`}
     >
-      <body className="min-h-screen overflow-x-hidden">
+      <body className="min-h-screen overflow-x-hidden xl:max-w-[1600px] mx-auto">
         <Navbar />
         {children}
         <Footer />

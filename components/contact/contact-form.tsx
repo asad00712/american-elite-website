@@ -25,7 +25,8 @@ export function ContactForm() {
           Send Us a Request
         </h3>
         <p className="text-[0.85rem] text-body-3 mb-7">
-          Fill out the form below and our team will get back to you shortly.
+          Fill out the form below and we will contact you shortly. Or please
+          call (973) 917-4949.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-[15px]">

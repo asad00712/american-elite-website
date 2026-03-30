@@ -61,13 +61,11 @@ function MoonIcon(props: IconProps) {
 
 const BENEFITS = [
   "On-Time Pick Up",
-  "Competitive All-Inclusive Pricing",
-  "Professional & Polite Chauffeurs",
+  "Low Prices",
+  "Professional & Polite Chauffeur",
   "Luggage Assistance",
   "Online Reservation",
-  "Available 24/7",
-  "Flight Tracking & Monitoring",
-  "Meet & Greet Service",
+  "Open 24/7",
 ];
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -95,14 +93,16 @@ export function AirportContent() {
           />
         </div>
         <h2 className="font-heading text-[1.7rem] md:text-[2rem] font-medium text-navy mb-4">
-          Airport Car & Limo Service
+          Airport Car &ndash; Limo Service
         </h2>
         <p className="text-[0.95rem] text-body-2 leading-7">
-          We know that after arriving at one of the major airports, you want to
-          reach your final destination and relax. At Limousine.com, we provide
-          world-class airport transportation service. We offer fast, efficient,
-          and reliable service from any airport to your destination. Experience
-          the benefits of using our premium limousine and car services.
+          We know that after arriving to one of the Major Airports in the Tri
+          State Area you might want to arrive to your final destination and
+          relax for the rest of the day. At American Elite Limousine in
+          Parsippany we provide a world class service for Airport
+          Transportation. We offer a fast, efficient and reliable service from
+          any Airport to your Destination. Check the benefits that you will
+          obtain by using our Limousine and Taxi Services.
         </p>
       </ScrollReveal>
 
@@ -126,11 +126,12 @@ export function AirportContent() {
       <ScrollReveal>
         <SectionHeading>One Way Trip?</SectionHeading>
         <p className="text-[0.95rem] text-body-2 leading-7">
-          If you&apos;re planning a one-way trip to the airport or from the
-          airport to your final destination, you can count on Limousine.com to
-          take care of you with our top-notch limousine and car service. You can
-          make a reservation online anytime, or if you need immediate service,
-          check availability through our 24/7 dispatch line.
+          If you&apos;re planning one way trip to the Airport or from the
+          Airport to your final destination, you can count on American Elite
+          Limousine to take care of you with our top notch Limousine and Taxi
+          Service. You can usually make a reservation the day before you need
+          our service, but if you need a quick taxi service, you can check
+          availability through a phone call.
         </p>
       </ScrollReveal>
 
@@ -138,8 +139,7 @@ export function AirportContent() {
       <ScrollReveal>
         <SectionHeading>Our Rates</SectionHeading>
         <p className="text-[0.95rem] text-body-2 leading-7 mb-6">
-          Our rates are transparent and all-inclusive. Every quote includes
-          gratuity, tolls, and fees — no surprises.
+          Price will vary according to the time you require our service.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -181,15 +181,16 @@ export function AirportContent() {
         </div>
 
         <p className="text-[0.95rem] text-body-2 leading-7">
-          For airport transportation service at any major airport worldwide, we
-          are ready to provide our qualified service. Contact us at{" "}
+          If you need our limousine and taxi transportation service in the
+          Newark Airport, John F Kennedy and LaGuardia prices may vary. We are
+          ready to provide our qualified service, give us a call at{" "}
           <a
-            href="tel:8889995466"
+            href={`tel:${SITE.phoneRaw}`}
             className="text-gold font-semibold no-underline hover:underline"
           >
             {SITE.phone}
           </a>{" "}
-          for a custom quote.
+          for price consultation.
         </p>
       </ScrollReveal>
     </div>

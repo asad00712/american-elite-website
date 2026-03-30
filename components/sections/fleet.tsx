@@ -18,7 +18,7 @@ export function Fleet() {
             <br />
             <em className="italic text-gold">Every Journey</em>
           </h2>
-          <div className="w-12 h-0.5 bg-gradient-to-r from-gold to-transparent my-[18px]" />
+
         </div>
         <p className="max-w-[360px] text-[0.92rem] text-body-2 leading-7">
           From intimate sedan transfers to full-scale bus services — Sedans,
@@ -27,10 +27,10 @@ export function Fleet() {
         </p>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {FLEET_VEHICLES.map((vehicle, i) => (
           <ScrollReveal key={vehicle.name} delay={i * 0.1}>
-            <div className="bg-white rounded-xl overflow-hidden border border-ivory-3 transition-all duration-[350ms] cursor-pointer hover:-translate-y-[7px] hover:shadow-[0_20px_60px_rgba(13,21,38,0.14)] group">
+            <div className="h-full flex flex-col bg-white rounded-xl overflow-hidden border border-ivory-3 transition-all duration-[350ms] cursor-pointer hover:-translate-y-[7px] hover:shadow-[0_20px_60px_rgba(13,21,38,0.14)] group">
               {/* Image */}
               <div className="h-[190px] overflow-hidden relative">
                 <Image
@@ -46,14 +46,14 @@ export function Fleet() {
                 </div>
               </div>
               {/* Body */}
-              <div className="p-5">
+              <div className="p-5 flex flex-col flex-1">
                 <div className="font-heading text-[1.15rem] font-medium text-navy mb-[7px]">
                   {vehicle.name}
                 </div>
                 <div className="text-[0.82rem] text-body-2 leading-relaxed mb-3.5">
                   {vehicle.description}
                 </div>
-                <div className="flex flex-wrap gap-[5px]">
+                <div className="flex flex-wrap gap-[5px] mt-auto">
                   {vehicle.tags.map((tag) => (
                     <span
                       key={tag}

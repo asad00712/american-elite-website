@@ -14,37 +14,37 @@ const WHY_CHOOSE_US = [
     icon: <ChauffeurIcon className="w-6 h-6 text-gold" />,
     title: "Professional Chauffeurs",
     description:
-      "Courteous, well-dressed chauffeurs trained in hospitality and safe driving practices.",
+      "Professional, courteous and well dressed chauffeurs trained in hospitality and safe driving practices.",
   },
   {
     icon: <CheckCircleIcon className="w-6 h-6 text-gold" />,
     title: "Confirmed Pick-Ups",
     description:
-      "We confirm all pick-ups in advance and arrive early so you never have to wait.",
+      "We confirm all pick-ups in advance. Arrive early and are available on short notice.",
   },
   {
     icon: <PlaneIcon className="w-6 h-6 text-gold" />,
     title: "Flight Monitoring",
     description:
-      "Real-time flight tracking for all airport pickups. We adjust to delays automatically.",
+      "Vast experience in airline business procedures to make your travel worry free. We monitor flight schedules.",
   },
   {
     icon: <DollarIcon className="w-6 h-6 text-gold" />,
-    title: "All-Inclusive Pricing",
+    title: "Affordable Pricing",
     description:
-      "Transparent, upfront pricing with no hidden fees. Tolls, gratuity, and fees included.",
+      "Reasonable rates with no hidden fees. Affordable and transparent pricing for all services.",
   },
   {
     icon: <HeadphonesIcon className="w-6 h-6 text-gold" />,
-    title: "24/7 Dispatch Support",
+    title: "Portal-to-Portal Service",
     description:
-      "Round-the-clock dispatch and customer support available every day of the year.",
+      "Complete door-to-door service with baggage assistance and knowledge about local hotels and restaurants.",
   },
   {
     icon: <GlobeIcon className="w-6 h-6 text-gold" />,
-    title: "Worldwide Coverage",
+    title: "NJ & TriState Coverage",
     description:
-      "Service available in 600+ cities across 60+ countries on six continents.",
+      "Serving all of New Jersey and the TriState area including all major airports — EWR, JFK, and LGA.",
   },
 ] as const;
 
@@ -58,7 +58,7 @@ function BenefitCard({
   description: string;
 }) {
   return (
-    <div className="bg-ivory border border-ivory-3 rounded-xl p-[30px_26px] relative overflow-hidden transition-all duration-[350ms] hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(13,21,38,0.14)] hover:border-gold/20 group before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-gold before:to-gold-2 before:scale-x-0 before:origin-left before:transition-transform before:duration-[350ms] hover:before:scale-x-100">
+    <div className="h-full bg-ivory border border-ivory-3 rounded-xl p-[30px_26px] relative overflow-hidden transition-all duration-[350ms] hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(13,21,38,0.14)] hover:border-gold/20 group before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-gold before:to-gold-2 before:scale-x-0 before:origin-left before:transition-transform before:duration-[350ms] hover:before:scale-x-100">
       <div className="w-[52px] h-[52px] rounded-xl bg-gold/10 flex items-center justify-center mb-[18px]">
         {icon}
       </div>
@@ -80,12 +80,12 @@ export function WhyChooseUs() {
         </div>
         <h2 className="font-heading text-[clamp(2rem,3.5vw,3rem)] font-normal text-navy leading-[1.2] -tracking-wide mt-3.5">
           Why Choose{" "}
-          <em className="italic text-gold">Limousine.com</em>
+          <em className="italic text-gold">American Elite?</em>
         </h2>
-        <div className="w-[90px] h-0.5 mx-auto my-[18px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+
         <p className="text-base text-body-2 leading-7 max-w-[580px] mx-auto">
-          Experience the highest standard of ground transportation with our
-          unmatched commitment to service, safety, and reliability.
+          We take pride in our professional, reliable, and efficient
+          transportation service throughout New Jersey and the TriState area.
         </p>
       </ScrollReveal>
 

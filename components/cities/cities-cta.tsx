@@ -75,7 +75,7 @@ export function CitiesCta() {
         <h2 className="font-heading text-[clamp(2rem,3.5vw,3rem)] font-normal text-navy leading-[1.2] -tracking-wide mt-3.5">
           Same Premium Service, Every <em className="italic text-gold">City</em>
         </h2>
-        <div className="w-[90px] h-0.5 mx-auto my-[18px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+
       </ScrollReveal>
 
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 mb-14">

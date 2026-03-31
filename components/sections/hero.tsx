@@ -51,7 +51,7 @@ export function Hero() {
       <div className="relative z-10">
         <div className="inline-flex items-center gap-2.5 text-[0.73rem] font-bold tracking-[3px] uppercase text-gold-3 mb-5">
           <span className="block w-7 h-px bg-gold-3/50" />
-          Premium Limousine &amp; Taxi Service
+          Premium Limousine Service
           <span className="block w-7 h-px bg-gold-3/50" />
         </div>
 

@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
+import LimousinSuv from "@/public/LimousinSuv.jpg";
 
 export function ContactHero() {
   return (
@@ -7,7 +8,7 @@ export function ContactHero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1563720223185-11003d516935?w=1800&q=80')",
+            `url('${LimousinSuv.src}')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/92 to-navy/85" />

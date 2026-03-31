@@ -21,7 +21,7 @@ export function Fleet() {
 
         </div>
         <p className="max-w-[360px] text-[0.92rem] text-body-2 leading-7">
-          From intimate sedan transfers to full-scale bus services — Sedans,
+          From intimate sedan transfers to full-scale bus services. Sedans,
           SUVs, Vans, or Buses, we have you covered for any group size or
           occasion.
         </p>

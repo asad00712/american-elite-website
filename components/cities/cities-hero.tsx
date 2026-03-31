@@ -32,7 +32,7 @@ export function CitiesHero() {
           </h1>
           <p className="text-[1.05rem] text-white/55 mt-4 max-w-[640px] mx-auto leading-7">
             Premium chauffeured transportation in 600+ cities across 60+
-            countries — wherever you travel, we&apos;re there
+            countries. Wherever you travel, we&apos;re there
           </p>
         </ScrollReveal>
 

@@ -10,7 +10,7 @@ export const SITE = {
   email: "americanelitelimousine@gmail.com",
   address: "Based in New Jersey",
   city: "Parsippany, NJ",
-  tagline: "Professional Limousine & Taxi · 24/7 · NJ & TriState Area",
+  tagline: "Professional Limousine Service · 24/7 · NJ & TriState Area",
 } as const;
 
 export const NAV_LINKS = [
@@ -48,7 +48,7 @@ export const FEATURES = [
     icon: "globe" as const,
     title: "TriState Area Coverage",
     description:
-      "Serving all of New Jersey and the TriState area. From Parsippany to Newark Airport, JFK, LaGuardia — we cover every major destination in NJ, NY, and beyond.",
+      "Serving all of New Jersey and the TriState area. From Parsippany to Newark Airport, JFK, LaGuardia. We cover every major destination in NJ, NY, and beyond.",
     link: "NJ & TriState",
   },
   {
@@ -62,7 +62,7 @@ export const FEATURES = [
     icon: "dollar" as const,
     title: "Affordable & Transparent",
     description:
-      "Reasonable rates with no hidden fees or surprise charges. Get a quote upfront before you book — what we quote is what you pay. Available 24 hours a day, 7 days a week.",
+      "Reasonable rates with no hidden fees or surprise charges. Get a quote upfront before you book. What we quote is what you pay. Available 24 hours a day, 7 days a week.",
     link: "Get a quote",
   },
 ];
@@ -132,7 +132,7 @@ export const COVERAGE_FEATURES = [
     icon: "plane",
     title: "Airport Transfers",
     description:
-      "Reliable service to and from Newark (EWR), JFK, and LaGuardia (LGA). Flight tracking included — we monitor your arrival.",
+      "Reliable service to and from Newark (EWR), JFK, and LaGuardia (LGA). Flight tracking included. We monitor your arrival.",
   },
   {
     icon: "building",

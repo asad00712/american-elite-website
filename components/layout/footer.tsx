@@ -14,7 +14,7 @@ export function Footer() {
               <Image src={Logo} alt="logo" className="h-16 w-24" />
             </a>
             <p className="text-[0.86rem] text-white/[0.42] leading-7 mt-3.5 max-w-[350px]">
-              New Jersey&apos;s premier limousine and taxi service. Professional,
+              New Jersey&apos;s premier limousine service. Professional,
               reliable, and affordable transportation available 24 hours a day,
               7 days a week for all your local and long distance travel needs.
             </p>

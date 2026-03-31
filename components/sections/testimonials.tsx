@@ -19,7 +19,7 @@ export function Testimonials() {
         </h2>
 
         <p className="text-base text-body-2 leading-7 max-w-[580px] mx-auto">
-          From corporate executives to wedding parties — our clients love the
+          From corporate executives to wedding parties, our clients love the
           American Elite experience every time.
         </p>
       </ScrollReveal>

@@ -14,7 +14,7 @@ export function CtaBanner() {
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1563720223185-11003d516935?w=1600&q=80')",
+            "url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1600&q=80')",
         }}
       >
         <div className="absolute inset-0 bg-navy/[0.89]" />
@@ -32,7 +32,7 @@ export function CtaBanner() {
         </h2>
 
         <p className="text-white/50 text-base leading-7 mb-10">
-          From airport pickups to corporate travel and special events —
+          From airport pickups to corporate travel and special events,
           we make it effortless. Professional service, reasonable rates, available 24/7.
         </p>
         <div className="flex justify-center gap-3.5 flex-wrap">

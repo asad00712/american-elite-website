@@ -52,7 +52,7 @@ export function AppSection() {
           <div className="w-12 h-0.5 bg-linear-to-r from-gold to-transparent my-4.5" />
           <p className="text-base text-body-2 leading-7 max-w-145">
             Easily book, change, or cancel rides on the go. You are in command
-            anywhere in the world — right from your phone.
+            anywhere in the world, right from your phone.
           </p>
 
           <div className="flex flex-col gap-[13px] my-7">

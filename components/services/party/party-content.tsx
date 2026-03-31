@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
 import { SITE } from "@/lib/constants";
 import type { SVGProps } from "react";
-import PartyImage from "@/public/special_events_transportation.jpg";
+const PARTY_IMAGE = "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=80";
 
 type IconProps = SVGProps<SVGSVGElement>;
 
@@ -49,7 +49,7 @@ export function PartyContent() {
       <ScrollReveal>
         <div className="rounded-xl overflow-hidden mb-6">
           <Image
-            src={PartyImage}
+            src={PARTY_IMAGE}
             alt="Luxury stretch limousine for party transportation"
             width={800}
             height={450}
@@ -95,7 +95,7 @@ export function PartyContent() {
             {SITE.phone}
           </a>{" "}
           and make your reservation to start enjoying the unique and world class
-          service of American Elite Limousine and Taxi Services.
+          service of American Elite Limousine.
         </p>
       </ScrollReveal>
     </div>

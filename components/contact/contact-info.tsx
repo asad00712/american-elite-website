@@ -40,8 +40,8 @@ function ContactCard({
   children: ReactNode;
 }) {
   return (
-    <div className="flex items-start gap-4 bg-white border border-ivory-3 rounded-xl p-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(13,21,38,0.08)] hover:border-gold/20">
-      <div className="w-11 h-11 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+    <div className="flex items-start gap-4 bg-gradient-to-br from-navy/[0.03] via-gold/[0.06] to-navy/[0.03] border border-gold/15 rounded-xl p-5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(13,21,38,0.1)] hover:border-gold/30 hover:from-navy/[0.05] hover:via-gold/[0.1] hover:to-navy/[0.05]">
+      <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center shrink-0">
         {icon}
       </div>
       <div>

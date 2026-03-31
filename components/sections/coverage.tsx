@@ -53,7 +53,7 @@ export function Coverage() {
 
           <p className="text-base text-white/50 leading-7 max-w-[580px]">
             Whether you need an airport pickup, corporate transportation,
-            or a ride for a special event — American Elite Limousine has you
+            or a ride for a special event, American Elite Limousine has you
             covered across New Jersey and the TriState area.
           </p>
 

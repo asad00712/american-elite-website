@@ -15,9 +15,9 @@
   --color-navy: #0D1526;
   --color-navy-2: #152035;
   --color-navy-3: #1E2D47;
-  --color-gold: #B8902E;
-  --color-gold-2: #D4A83A;
-  --color-gold-3: #F0C84A;
+  --color-gold: #9A7824;
+  --color-gold-2: #9A7824;
+  --color-gold-3: #D4A83A;
   --color-ivory: #FAFAF7;
   --color-ivory-2: #F2F0EA;
   --color-ivory-3: #E8E5DC;
@@ -82,8 +82,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: #E8E5DC;
   --input: #E8E5DC;
-  --ring: #B8902E;
-  --chart-1: #B8902E;
+  --ring: #9A7824;
+  --chart-1: #9A7824;
   --chart-2: #D4A83A;
   --chart-3: #0D1526;
   --chart-4: #F2F0EA;
@@ -96,7 +96,7 @@
   --sidebar-accent: #F2F0EA;
   --sidebar-accent-foreground: #1A1A2E;
   --sidebar-border: #E8E5DC;
-  --sidebar-ring: #B8902E;
+  --sidebar-ring: #9A7824;
 }
 
 @layer base {
@@ -115,7 +115,7 @@
 /* Custom Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #FAFAF7; }
-::-webkit-scrollbar-thumb { background: #B8902E; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #9A7824; border-radius: 3px; }
 
 /* Marquee */
 @keyframes marquee {
@@ -130,7 +130,7 @@
 .tp-scroll::-webkit-scrollbar { width: 3px; }
 .tp-scroll::-webkit-scrollbar-track { background: transparent; }
 .tp-scroll::-webkit-scrollbar-thumb { background: #E8E5DC; border-radius: 3px; }
-.tp-scroll::-webkit-scrollbar-thumb:hover { background: #B8902E; }
+.tp-scroll::-webkit-scrollbar-thumb:hover { background: #9A7824; }
 .tp-scroll { scrollbar-width: thin; scrollbar-color: #E8E5DC transparent; }
 
 /* Transition utilities */

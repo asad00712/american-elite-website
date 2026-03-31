@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
 import { SITE } from "@/lib/constants";
 import type { SVGProps } from "react";
-import BlackCar from '@/public/BlackCar.png'
+import LimousineHorizontal from '@/public/LimousineHorizontal.png';
 
 type IconProps = SVGProps<SVGSVGElement>;
 
@@ -58,7 +58,7 @@ export function CorporateContent() {
       <ScrollReveal>
         <div className="rounded-xl overflow-hidden mb-6">
           <Image
-            src={BlackCar}
+            src={LimousineHorizontal}
             alt="Luxury sedan for corporate transportation"
             width={800}
             height={450}
@@ -95,9 +95,9 @@ export function CorporateContent() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           {/* Standard Hours Card */}
-          <div className="bg-white rounded-xl border border-ivory-3 p-5 shadow-[0_4px_20px_rgba(13,21,38,0.05)]">
+          <div className="bg-gradient-to-br from-navy/[0.03] via-gold/[0.06] to-navy/[0.03] rounded-xl border border-gold/15 p-5 shadow-[0_4px_20px_rgba(13,21,38,0.05)]">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center">
                 <ClockIcon className="w-5 h-5 text-gold" />
               </div>
               <h3 className="font-heading text-[1.05rem] font-medium text-navy">
@@ -113,9 +113,9 @@ export function CorporateContent() {
           </div>
 
           {/* Late Night Card */}
-          <div className="bg-white rounded-xl border border-ivory-3 p-5 shadow-[0_4px_20px_rgba(13,21,38,0.05)]">
+          <div className="bg-gradient-to-br from-navy/[0.03] via-gold/[0.06] to-navy/[0.03] rounded-xl border border-gold/15 p-5 shadow-[0_4px_20px_rgba(13,21,38,0.05)]">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center">
                 <MoonIcon className="w-5 h-5 text-navy" />
               </div>
               <h3 className="font-heading text-[1.05rem] font-medium text-navy">
@@ -141,7 +141,7 @@ export function CorporateContent() {
             {SITE.phone}
           </a>{" "}
           and Make your Reservation to start enjoying the unique and world class
-          service of American Elite Limousine and Taxi Services.
+          service of American Elite Limousine.
         </p>
       </ScrollReveal>
     </div>

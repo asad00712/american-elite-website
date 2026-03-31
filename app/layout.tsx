@@ -18,12 +18,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "American Elite Limousine & Taxi — Professional Limo Service in New Jersey",
+  title: "American Elite Limousine | Professional Limo Service in New Jersey",
   description:
-    "New Jersey's premier limousine and taxi service. Airport transportation to EWR, JFK, LaGuardia. Corporate travel, party limos, and long distance. Available 24/7. Call (973) 917-4949.",
+    "New Jersey's premier limousine service. Airport transportation to EWR, JFK, LaGuardia. Corporate travel, party limos, and long distance. Available 24/7. Call (973) 917-4949.",
   keywords: [
     "limousine service NJ",
-    "taxi service New Jersey",
+    "limo service New Jersey",
     "airport transportation NJ",
     "corporate limo NJ",
     "Parsippany limo",

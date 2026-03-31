@@ -35,7 +35,7 @@ export function Navbar() {
     >
       {/* Logo */}
       <a href="/" className="flex items-center gap-2.5 no-underline">
-        <Image src={Logo} alt="logo" className="h-16 w-24" />
+        <Image src={Logo} alt="logo" className="h-17.5 w-24" />
       </a>
 
       {/* Desktop links */}
@@ -61,7 +61,7 @@ export function Navbar() {
 
                 {/* Dropdown */}
                 <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="bg-white rounded-lg border border-ivory-3 shadow-[0_12px_40px_rgba(13,21,38,0.12)] min-w-[260px] py-2 overflow-hidden">
+                  <div className="bg-white rounded-lg border border-ivory-3 shadow-[0_12px_40px_rgba(13,21,38,0.12)] min-w-[280px] py-2 overflow-hidden">
                     {link.children.map((child) => (
                       <a
                         key={child.href}

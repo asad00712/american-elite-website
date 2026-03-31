@@ -15,13 +15,13 @@ export function FleetIntro() {
           </h2>
 
           <p className="text-[0.95rem] text-body-2 leading-8">
-            At American Elite Limousine &amp; Taxi, we pride ourselves on offering
+            At American Elite Limousine, we pride ourselves on offering
             a wide range of chauffeur driven cars, specially tailored to your very
             need. We offer clean non-smoking transportation including Lincoln Town
             Cars, Luxury SUVs, and 14 Passenger Vans. All vehicles are maintained
             to the highest standards, ensuring your safety and comfort at all times.
             Whether you&apos;re heading to the airport, a corporate meeting, or a
-            special event — we have the perfect vehicle for you.
+            special event, we have the perfect vehicle for you.
           </p>
         </ScrollReveal>
       </div>

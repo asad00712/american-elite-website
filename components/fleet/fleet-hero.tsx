@@ -26,7 +26,7 @@ export function FleetHero() {
           </h1>
           <p className="text-[1.05rem] text-white/55 mt-4 max-w-[600px] mx-auto leading-7">
             Explore a variety of vehicles we offer at American Elite Limousine,
-            from Lincoln Town Cars and SUVs to 14 Passenger Vans — specially
+            from Lincoln Town Cars and SUVs to 14 Passenger Vans, specially
             tailored for your needs.
           </p>
           <Link

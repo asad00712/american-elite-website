@@ -96,21 +96,17 @@ export const FLEET_VEHICLES = [
 
 export const SERVICE_AREAS = [
   "Parsippany",
-  "Basking Ridge",
-  "Madison",
-  "Livingston",
-  "Montville",
-  "Bernardsville",
-  "Florham Park",
-  "East Hanover",
-  "Rockaway",
+  "Newark",
   "Morristown",
+  "Jersey City",
+  "Hoboken",
   "Short Hills",
-  "Summit",
-  "Chatham",
-  "Whippany",
-  "Denville",
-  "Boonton",
+  "Edison",
+  "Ridgewood",
+  "Livingston",
+  "Paterson",
+  "Princeton",
+  "Atlantic City",
 ] as const;
 
 export const AIRPORT_SERVICES = [

@@ -2,9 +2,9 @@ import { ScrollReveal } from "@/components/sections/scroll-reveal";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 
 const HERO_STATS = [
-  { value: "600+", label: "Cities" },
-  { value: "60+", label: "Countries" },
-  { value: "6", label: "Continents" },
+  { value: "12", label: "Dedicated Cities" },
+  { value: "3", label: "Major Airports" },
+  { value: "98%", label: "On-Time Rate" },
   { value: "24/7", label: "Dispatch" },
 ] as const;
 
@@ -24,15 +24,15 @@ export function CitiesHero() {
         <ScrollReveal>
           <div className="inline-flex items-center gap-2.5 text-[0.71rem] font-bold tracking-[3px] uppercase text-gold-3 justify-center mb-4">
             <span className="w-7 h-0.5 bg-gold-3/50 shrink-0" />
-            Global Network
+            Service Areas
             <span className="w-7 h-0.5 bg-gold-3/50 shrink-0" />
           </div>
           <h1 className="font-heading text-[clamp(2.4rem,5vw,4rem)] font-normal text-white leading-[1.15] -tracking-wide">
-            Our Global <em className="italic text-gold-3">Network</em>
+            Our <em className="italic text-gold-3">Service Areas</em>
           </h1>
           <p className="text-[1.05rem] text-white/55 mt-4 max-w-[640px] mx-auto leading-7">
-            Premium chauffeured transportation in 600+ cities across 60+
-            countries. Wherever you travel, we&apos;re there
+            Professional limousine and car service across New Jersey and the
+            TriState area. Wherever you need to go, we will get you there.
           </p>
         </ScrollReveal>
 

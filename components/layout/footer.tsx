@@ -1,5 +1,5 @@
 import { SITE, FOOTER_SERVICES, FOOTER_COMPANY } from "@/lib/constants";
-import Logo from "@/public/AmercanLogo.png";
+import Logo from "@/public/AmericanLogo.png";
 import Image from "next/image";
 
 export function Footer() {
@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <a href="#" className="flex items-center gap-2.5 no-underline">
-              <Image src={Logo} alt="logo" className="h-16 w-24" />
+              <Image src={Logo} alt="logo" className="h-17.5 w-20" />
             </a>
             <p className="text-[0.86rem] text-white/[0.42] leading-7 mt-3.5 max-w-[350px]">
               New Jersey&apos;s premier limousine service. Professional,

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import Image from "next/image";
-import Logo from "@/public/AmercanLogo.png";
+import Logo from "@/public/AmericanLogo.png";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -35,7 +35,7 @@ export function Navbar() {
     >
       {/* Logo */}
       <a href="/" className="flex items-center gap-2.5 no-underline">
-        <Image src={Logo} alt="logo" className="h-17.5 w-24" />
+        <Image src={Logo} alt="logo" className="h-17.5 w-20" />
       </a>
 
       {/* Desktop links */}
